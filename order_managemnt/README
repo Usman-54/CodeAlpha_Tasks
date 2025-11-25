@@ -1,1 +1,44 @@
 
+Order Management System
+
+A Django-based RESTful application for managing restaurant operations: menu, inventory, tables, reservations, and orders. Designed to streamline restaurant workflow and ensure accurate order and stock management.
+
+Features
+
+CRUD for Menu, Inventory, Tables, Reservations, and Orders
+Automatic inventory tracking and stock updates
+Table availability checks for reservations and orders
+REST API endpoints for integration
+Manage all data via Django admin panel
+
+Technology Stack
+
+Python, Django, Django REST Framework
+MySQL
+Git & GitHub
+
+API Endpoints (examples)
+
+/menu/ – List/Create menu items
+
+/inventory/ – List/Create inventory items
+
+/tables/ – List/Create tables
+
+/reservations/ – List/Create reservations
+
+/orders/ – List/Create orders
+
+Setup
+git clone https://github.com/Usman-54/CodeAlpha_Tasks.git
+cd CodeAlpha_Tasks
+python -m venv venv
+venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+Access admin panel: http://127.0.0.1:8000/admin/
+and the admin is codeapha and also email and and as well password.
