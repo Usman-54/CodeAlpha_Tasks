@@ -1,1 +1,44 @@
+Event Management System
 
+A Django REST API for managing events, user registrations, and authentication. Users can sign up, log in, browse events, register, and cancel registrations. Includes an admin panel for managing users, events, and registrations.
+
+Key Features
+
+User authentication with token-based login
+
+Create, view, and manage events
+
+Event registration with capacity checks and cancellation
+
+Admin panel for managing users, events, and registrations
+
+REST API endpoints for frontend or mobile integration
+
+Setup
+git clone https://github.com/Usman-54/CodeAlpha_Tasks.git
+cd CodeAlpha_Tasks
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+
+Admin panel: http://127.0.0.1:8000/admin/
+
+API Endpoints
+
+/signup/ – Register new user
+
+/login/ – User login
+
+/events/ – List/Create events
+
+/events/<id>/ – Event details
+
+/events/<id>/register/ – Register for an event
+
+/registrations/ – User registrations
+
+/registrations/<id>/cancel/ – Cancel registration
